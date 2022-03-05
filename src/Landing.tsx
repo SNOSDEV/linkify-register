@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { Routes, Route, Link } from "react-router-dom";
 
-export default function landing() {
+export default function Landing() {
   return (
     <>
       <Container maxW={'3xl'}>
@@ -38,7 +38,35 @@ export default function landing() {
             align={'center'}
             alignSelf={'center'}
             position={'relative'}>
-                
+
+            <Button
+              as={Link}
+              to="/founder"              
+              colorScheme={'green'}
+              bg={'green.400'}
+              rounded={'full'}
+              px={6}
+              width={'300px'}
+              _hover={{
+                bg: 'green.500',
+              }}>
+              Founders & Innovators
+            </Button>
+ 
+            <Button
+              as={Link}
+              to="/investor"                          
+              colorScheme={'green'}
+              bg={'green.400'}
+              rounded={'full'}
+              px={6}
+              width={'300px'}
+              _hover={{
+                bg: 'green.500',
+              }}>
+              Investor
+            </Button>
+
             <Button
               as={Link}
               to="/developer"
@@ -46,33 +74,13 @@ export default function landing() {
               bg={'green.400'}
               rounded={'full'}
               px={6}
+              width={'300px'}
               _hover={{
                 bg: 'green.500',
               }}>
               Developer
             </Button>
 
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Designer
-            </Button>
-
-            <Button
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Investor
-            </Button>
 
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more

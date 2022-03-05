@@ -5,13 +5,17 @@ import reportWebVitals from "./reportWebVitals"
 import * as serviceWorker from "./serviceWorker"
 import * as ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import { MoralisProvider } from "react-moralis";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <ColorModeScript />
-      <App />
-    </React.StrictMode></BrowserRouter>,
+  <MoralisProvider appId="9aBZdIRTEMuCvGrD2G91Exx6HTD6ZNr5MNbEY46q" serverUrl="https://jxd80fmgmofz.usemoralis.com:2053/server">
+    <BrowserRouter>
+      <React.StrictMode>
+        <ColorModeScript />
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>
+  </MoralisProvider>,
   document.getElementById("root"),
 )
 

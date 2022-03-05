@@ -7,8 +7,17 @@
     box-shadow: 0 0 0 3px orange;    
 }
 
+.chakra-radio-group.chakra-stack {
+    flex-direction: column !important;
+}
 
-  
+.chakra-stack {
+    flex-direction: column !important;
+}
+
+.chakra-radio {
+    margin: 1rem !important;
+}
 /* .chakra-checkbox {
     width: 16px;
     height: 16px;
