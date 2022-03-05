@@ -2,3 +2,35 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.l-checkbox input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px orange;    
+}
+
+
+  
+/* .chakra-checkbox {
+    width: 16px;
+    height: 16px;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-left: 0px;
+    padding: 12px;
+    border-color: #7e7e7e;
+    border-radius: 5px;
+    -webkit-transition: opacity 200ms ease, border-color 200ms ease, background-color 200ms ease;
+    transition: opacity 200ms ease, border-color 200ms ease, background-color 200ms ease;
+    cursor: pointer;
+    border-width: 1px;
+    border-color: #202020;
+    background-color: #202020;
+    background-image: url(https://uploads-ssl.webflow.com/620b440…/621df9f…_check.svg), linear-gradient(
+58deg
+, #f2a478, #60c2f4);
+    background-position: 50% 50%, 0px 0px;
+    background-size: 12px, auto;
+    background-repeat: no-repeat, repeat;
+    color: linear-gradient(58deg, #f2a478, #60c2f4);
+}
+
+ */
