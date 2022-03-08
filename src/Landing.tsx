@@ -10,6 +10,7 @@ import {
   createIcon,
 } from '@chakra-ui/react';
 import { Routes, Route, Link } from "react-router-dom";
+import { Widget, PopupButton } from '@typeform/embed-react'
 
 export default function Landing() {
   return (
@@ -26,11 +27,11 @@ export default function Landing() {
             lineHeight={'110%'}>
             Register now for <br />
             <Text as={'span'} color={'green.400'}>
-              Linkify
+              LinkerFi
             </Text>
           </Heading>
           <Text color={'gray.500'}>
-              Make a selection below to register your interest in joining the Linkify Platform
+              Make a selection below to register your interest in joining the LinkerFi Platform
           </Text>
           <Stack
             direction={'column'}
@@ -39,48 +40,17 @@ export default function Landing() {
             alignSelf={'center'}
             position={'relative'}>
 
-            <Button
-              as={Link}
-              to="/founder"              
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              width={'300px'}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Founders & Innovators
-            </Button>
- 
-            <Button
-              as={Link}
-              to="/investor"                          
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              width={'300px'}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Investor
-            </Button>
+            <PopupButton id="NKaIi22F" className="chakra-button css-lxn30l">
+                Founders & Innovators
+            </PopupButton>
 
-            <Button
-              as={Link}
-              to="/developer"
-              colorScheme={'green'}
-              bg={'green.400'}
-              rounded={'full'}
-              px={6}
-              width={'300px'}
-              _hover={{
-                bg: 'green.500',
-              }}>
-              Developer
-            </Button>
+            <PopupButton id="xQdv3Qwv" className="chakra-button css-lxn30l">
+                Investor
+            </PopupButton>
 
+            <PopupButton id="xQdv3Qwv" className="chakra-button css-lxn30l">
+                Developer
+            </PopupButton>
 
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
