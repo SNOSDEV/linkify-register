@@ -13,6 +13,10 @@ import { Routes, Route, Link } from "react-router-dom";
 import { Widget, PopupButton } from '@typeform/embed-react'
 
 export default function Landing() {
+    const onDeveloperSubmit = (values: any) => {
+        console.log("DEV: ", values);
+    }
+
   return (
     <>
       <Container maxW={'3xl'}>
@@ -48,7 +52,7 @@ export default function Landing() {
                 Investor
             </PopupButton>
 
-            <PopupButton id="xQdv3Qwv" className="chakra-button css-lxn30l">
+            <PopupButton onSubmit={(value) => onDeveloperSubmit(value)} id="xQdv3Qwv" className="chakra-button css-lxn30l">
                 Developer
             </PopupButton>
 
